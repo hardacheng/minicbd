@@ -1,0 +1,89 @@
+/* pages/home/home.wxss */
+view {
+  background-color: #EDEDED;
+  padding-bottom: 20rpx;
+}
+
+swiper {
+  width: 750rpx;
+  height: 422rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.tolist {
+  width: 750rpx;
+  height: 404rpx;
+  padding: 20rpx 30rpx;
+}
+
+.tolist image {
+  width: 93%;
+  height: 100%;
+  border-radius: 20rpx;
+  /* padding:0 30rpx; */
+}
+
+.show {
+  width: 750rpx;
+  height: 240rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.show image {
+
+  width: 45%;
+  height: 90%;
+  border-radius: 15rpx;
+}
+
+.show2,
+.show2 view {
+  background-color: #fff;
+  border-top-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+}
+
+.show2 {
+  width: 700rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30rpx;
+}
+
+.show2 view {
+  text-align: center;
+}
+
+.show2 view text {
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #13227a;
+}
+
+.show2 view image {
+  padding-top: 10rpx;
+  width: 150rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.article {
+  width: 700rpx;
+  height: 294rpx;
+  background-color: #fff;
+  margin-left:30rpx;
+  text-align: center;
+  border-bottom-right-radius: 15rpx;
+  border-bottom-left-radius: 15rpx;
+}
+.article image{
+  width: 630rpx;
+  height: 271rpx;
+}

@@ -1,0 +1,36 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="wallet">
+	<view class="dnum">
+		<text>取单号:</text>
+		<text> {{danhao}}</text>
+	</view>
+
+	<view class="dxlist">
+		<text class="dress">茶百道锦江大道店</text>
+		<view class="prow">
+			<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/products/p1.png">
+			</image>
+			<view class="pde">
+				<text>茉莉花茶</text>
+				<text class="box">去冰,正常糖,椰果x1</text>
+				<text>x1</text>
+			</view>
+			<text>¥ 18</text>
+		</view>
+
+		<view class="prow">
+			<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/products/p7.png">
+			</image>
+			<view class="pde">
+				<text>冰菊柠檬</text>
+				<text class="box">常温,加糖糖,珍珠x1</text>
+				<text>x2</text>
+			</view>
+			<text>¥ 22</text>
+		</view>
+		<view class="dpay">
+			<text>总计: 62</text>
+			<button>付款</button>
+		</view>
+	</view>
+</view>

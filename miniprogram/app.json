@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/wallet/wallet",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#13227a",
+    "navigationBarTitleText": "茶百道",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#13227a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/ahome.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "点单",
+        "iconPath": "images/order1.png",
+        "selectedIconPath": "images/aorder.png"
+      },
+      {
+        "pagePath": "pages/wallet/wallet",
+        "text": "订单",
+        "iconPath": "images/wallet1.png",
+        "selectedIconPath": "images/awallet.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my1.png",
+        "selectedIconPath": "images/amy.png"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,112 @@
+/* pages/my/my.wxss */
+.userInfo{
+  color: #13227a;
+  font-size: 40rpx;
+  font-weight: bold;
+  position: fixed;
+  top: 600rpx;
+  left: 25%;
+  align-items: center;
+}
+.userInfo button{
+  margin-top: 50rpx;
+  background-color: #13227a;
+  color: #fff;
+}
+.my{
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+.my image{width: 750rpx;}
+.user{
+  position: absolute;
+  /* background-color: #fff;*/
+  width: 90%;
+  top: 200rpx;
+  left: 5%;
+}
+.user .user1{
+  display: flex;
+  /* top: 200rpx; */
+}
+.user .user1 image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-right: 50rpx;
+}
+.user .user1 text{
+  font-weight: bold;
+  color: #fff;
+  margin-top: 15rpx;
+}
+.user .user2,.user3{
+  border-radius: 15rpx;
+  background-color: #fff;
+  padding: 40rpx 0 0 40rpx;
+  padding-bottom: 10rpx;
+}
+.user .user2{
+  margin-top: 50rpx;
+} 
+.user .user3{
+  margin-top: 30rpx;
+}
+.user .user2>text{
+  font-weight: bold;
+}
+.user .user3>text{
+  font-weight: bold;
+}
+.user2 .pkist{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:40rpx;
+}
+.user2 .pkist .first:not(:first-child){
+  margin-left:40rpx;
+}
+.user2 .pkist .first{
+  margin-top: 15rpx;
+  width: 180rpx;
+}
+.user2 .pkist .first:last-child{margin-left:0;}
+.user2 .pkist .one image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.user2 .pkist .one text{
+  font-weight: bold;
+}
+.user2 .pkist .first>text{
+  font-size: 35rpx;
+  color: gray;
+}
+.user3 .pkist2{
+  display: flex;
+  margin-top:40rpx;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.user3 .pkist2 .two image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.user3 .pkist2 .two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130rpx;
+  margin-top: 15rpx;
+}
+.user3 .pkist2 .two text{
+  margin-top: 25rpx;
+  font-size:30rpx;
+  color: gray;
+}
+
+
+
+

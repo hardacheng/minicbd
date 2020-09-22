@@ -1,0 +1,115 @@
+<!--pages/my/my.wxml-->
+
+<view class="my">
+	<image src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/bgf.jpg"></image>
+</view>
+<!--用户层 -->
+<view wx:if="{{userInfo}}" class="user">
+	<view class="user1">
+		<image src="{{userInfo.avatarUrl}}"></image>
+		<text>{{userInfo.nickName}}</text>
+	</view>
+	<view class="user2">
+		<text>我的资产</text>
+		<view class="pkist">
+
+			<view bindtap="showToast" class="first">
+				<view class="one">
+					<image src="../../images/jifen.png"></image>
+					<text>积分</text>
+				</view>
+				<text>0个未使用 </text>
+			</view>
+
+      <view class="first" bindtap="showToast">
+				<view class="one">
+					<image src="../../images/xquan.png"></image>
+					<text>优惠券</text>
+				</view>
+				<text>0个未使用 </text>
+			</view>
+
+      <view class="first" bindtap="showToast">
+				<view class="one">
+					<image src="../../images/yue.png"></image>
+					<text>余额</text>
+				</view>
+				<text>0个未使用 </text>
+			</view>
+
+      <view class="first" bindtap="showToast">
+				<view class="one">
+					<image src="../../images/hong.png"></image>
+					<text>红包</text>
+				</view>
+				<text>0个未使用 </text>
+			</view>
+
+		</view>
+	</view>
+
+	<view  class="user3">
+		<text>我的订单</text>
+    <view class="pkist2">
+      <view class="two" bindtap="showToast">
+        <image src="../../images/xding.png"></image>
+        <text>食堂/外卖</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/mding.png"></image>
+        <text>买单订单</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/yding.png"></image>
+        <text>预约订单</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/chucun.png"></image>
+        <text>会员储值</text>
+      </view>
+    </view>
+	</view>
+  
+	<view class="user3">
+		<text>我的功能</text>
+    <view class="pkist2">
+      <view class="two" bindtap="showToast">
+        <image src="../../images/lcard.png"></image>
+        <text>我的礼品卡</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/daij.png"></image>
+        <text>我的代金券</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/dres.png"></image>
+        <text>我的地址</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/ewm.png"></image>
+        <text>会员码</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/yhui.png"></image>
+        <text>兑换优惠</text>
+      </view>
+
+      <view class="two" bindtap="showToast">
+        <image src="../../images/lainxi.png"></image>
+        <text>联系客服</text>
+      </view>
+    </view>
+	</view>
+</view>
+
+<view wx:else class="userInfo">
+	<text>未检测到您的个人信息</text>
+	<button open-type="getUserInfo" bindgetuserinfo="getUserinfo">请您授权信息</button>
+</view>

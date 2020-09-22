@@ -1,0 +1,36 @@
+<!--pages/home/home.wxml-->
+<view>
+	<swiper autoplay="true" indicator-color="#fff" indicator-dots="true" indicator-active-color="#13227a" circular="true">
+		<swiper-item wx:for="{{swipers}}" wx:key="index">
+			<image lazy-load="true" src="{{item.sw}}"></image>
+		</swiper-item>
+	</swiper>
+
+	<navigator url="/pages/order/order" open-type="switchTab" hover-class="">
+		<view class="tolist">
+			<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/home1.jpg"></image>
+		</view>
+	</navigator>
+
+	<view class="show">
+		<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/home12.jpg"></image>
+		<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/home3.jpg"></image>
+	</view>
+
+	<view class="show2">
+		<navigator url="/pages/my/my" open-type="switchTab" hover-class="">
+			<view>
+				<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/jifen.png"></image>
+				<text>我的积分</text>
+			</view>
+		</navigator>
+		<view bindtap="showToast2">
+			<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/QRcode.png"></image>
+			<text>会员码</text>
+		</view>
+	</view>
+
+	<view class="article" bindtap="showToast">
+		<image lazy-load="true" src="cloud://kkk-63cvm.6b6b-kkk-63cvm-1302923442/images/home4.png"></image>
+	</view>
+</view>

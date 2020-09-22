@@ -1,0 +1,90 @@
+/* pages/wallet/wallet.wxss */
+.wallet{
+  width: 750rpx;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding-top: 40rpx;
+}
+.wallet .dnum{
+  height: 200rpx;
+  line-height: 200rpx;
+  padding-left: 50rpx;
+}
+.wallet .dnum,.dxlist{
+  background-color: #fff;
+  margin-left:5%;
+  margin-right: 5%;
+  margin-bottom: 40rpx;
+  border-radius: 25rpx;
+  width: 85%;
+}
+.wallet text:first-child{
+  font-size: 30rpx;
+  color: gray;
+}
+.wallet text:last-child{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.dxlist{
+  padding:40rpx 0 20rpx 40rpx;
+}
+.dxlist .dress{
+  width: 90%;
+  display: inline-block;
+  border-bottom: 2rpx solid #000;
+  font-weight: bold;
+}
+.dxlist .prow{
+  display: flex;
+  margin-bottom: 40rpx;
+}
+.dxlist .prow image{
+  width:200rpx;
+  height: 200rpx;
+}
+.dxlist .prow .pde{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+}
+.dxlist .prow .pde text:first-child{
+  font-weight: bold;
+  color: #000;
+}
+.dxlist .prow .pde text:nth-child(2){
+  font-size: 25rpx;
+  color: gray;
+}
+.dxlist .prow .pde text:last-child{
+  font-size: 25rpx;
+  color: gray;
+}
+.dxlist .prow .pde text:first-child{
+  font-weight: bold;
+}
+.dxlist .prow>text{
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+}
+.dxlist .dpay{
+  display: flex;
+  justify-content: space-between;
+}
+.dxlist .dpay>button{
+  background-color: #13227a;
+  border-radius: 50rpx;
+  width: 200rpx;
+  /* height: 50rpx; */
+  color: #fff;
+  margin-right: 40rpx;
+}
+.dxlist .dpay>text{
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #000;
+  margin-top: 15rpx;
+}
+
+  

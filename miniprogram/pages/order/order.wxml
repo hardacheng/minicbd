@@ -1,0 +1,46 @@
+<view class="order">
+	<!-- 左侧标签 -->
+	<view class="pleft">
+		<view wx:for="{{plabel}}" wx:key="index" wx:for-item="labItem" class="labelItem {{index===val ? 'nav-active' : ''}}" bindtap="selectIndex" data-index="{{index}}">
+			<image src="{{labItem.smimg}}" lazy-load="true"></image>
+			<p>{{labItem.label1}}</p>
+		</view>
+	</view>
+
+	<!-- 右侧滚动块 -->
+	<scroll-view class="scrollV" scroll-with-animation="true" scroll-y="true" bindscroll="scroll" scroll-into-view="{{'index'+active_index}}" bindscrolltolower="bottom">
+
+		<swiper class="swiper-box" indicator-dots="{{ indicatordots }}" autoplay="{{ autoplay }}" circular="true">
+				<swiper-item wx:for="{{ pswipers }}" wx:key="index">
+					<image lazy-load="true" class="slide-image" src="{{ item.psw }}"></image>
+				</swiper-item>
+			</swiper>
+
+		<view class="psel" wx:for="{{plabel}}" wx:for-item="obj" wx:key="index">
+			<text class="indexName" id="index{{index}}" data-id="{{index}}">{{obj.label1}}</text>
+				<view class="ppp" wx:for="{{obj.content}}" wx:key="index">
+					<view class="prow">
+						<image lazy-load="true" src="{{item.smimg}}">
+						</image>
+						<view class="pde">
+							<text>{{item.dtitle}}</text>
+							<text class="box">{{item.deta}}</text>
+							<text>¥{{item.dprice}}</text>
+						</view>
+					</view>
+				</view>
+		</view>
+	</scroll-view>
+
+
+	<!-- 悬浮框 -->
+	<view class="tocart">
+		<view class="toshop1">
+			<image src="../../images/dshop.png"></image>
+			<text>¥18{{sumPrice}}</text>
+		</view>
+		<navigator class="toshop2" url="/pages/wallet/wallet" open-type="switchTab" hover-class="">
+			<text>去结算</text>
+		</navigator>
+	</view>
+</view>
